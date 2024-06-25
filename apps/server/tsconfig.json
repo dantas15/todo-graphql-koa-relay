@@ -1,0 +1,18 @@
+{
+  "extends": "@todo-graphql-koa-relay/tsconfig/base.json",
+  "compilerOptions": {
+    "composite": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./build/tsc",
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./dist/tsconfig.tsbuildinfo"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "src/**/__tests__/**/*",
+    "src/modules/*/fixture/*",
+    "test/**/*"
+  ]
+}

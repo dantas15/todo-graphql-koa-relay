@@ -1,5 +1,29 @@
 {
   "name": "@todo-graphql-koa-relay/server",
   "version": "1.0.0",
-  "private": "true"
+  "private": "true",
+  "scripts": {
+    "config:local": "cp .env.example .env",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "dotenv-safe": "^9.1.0",
+    "kcors": "^2.2.2",
+    "koa": "^2.15.3",
+    "koa-bodyparser": "^4.4.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^12.0.1"
+  },
+  "devDependencies": {
+    "@todo-graphql-koa-relay/tsconfig": "workspace:*",
+    "@types/dotenv-safe": "^8.1.6",
+    "@types/kcors": "^2.2.8",
+    "@types/koa": "^2.15.0",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa-logger": "^3.1.5",
+    "@types/koa-router": "^7.4.8",
+    "@types/node": "^20.14.8",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  }
 }
