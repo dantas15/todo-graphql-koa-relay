@@ -6,6 +6,10 @@
     "allowSyntheticDefaultImports": true,
     "outDir": "./build/tsc",
     "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "tsBuildInfoFile": "./dist/tsconfig.tsbuildinfo"
   },
   "include": ["src/**/*.ts"],

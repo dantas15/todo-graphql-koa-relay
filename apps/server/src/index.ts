@@ -5,7 +5,7 @@ import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
 import KoaLogger from 'koa-logger';
 import Router from 'koa-router';
-import { config } from './config';
+import { config } from '@/config';
 
 const app = new Koa();
 
