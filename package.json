@@ -1,7 +1,10 @@
 {
   "private": true,
   "name": "todo-graphql-koa-relay",
-  "scripts": {},
+  "scripts": {
+    "config:local": "turbo run config:local",
+    "dev": "turbo run dev"
+  },
   "devDependencies": {
     "turbo": "^2.0.4"
   },
