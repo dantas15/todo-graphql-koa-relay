@@ -10,6 +10,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+      <li><a href="#data-modeling">Data modeling</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -24,6 +25,30 @@
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
+
+<!-- ABOUT THE PROJECT-->
+
+## About the project
+
+### Data modeling
+
+The following image displays the basic structure of a to-do:
+
+![models-url]
+
+- The user must provide the to-do's:
+  - `title`
+  - `description`
+- The user optionally can provide:
+  - `dueDate`: the date when the to-do is due
+  - `attachments`: the user can provide an attachment, like an image or a document of any kind to be attached to the specified to-do
+    - the `fileName` is the name of the file that was provided
+    - the `fileUrl` is the path for the file on the backend
+- The state of the to-do can be controlled with the following properties:
+  - `createdAt`: value of the to-do when it's created
+  - `doneAt`: tracks if the to-do is marked as completed
+  - `deletedAt`: checks if the to-do was deleted
+    - this is used instead of just deleting so there can be a "trash can" before actually deleting the to-do, allowing the user to recover them
 
 ### Built With
 
@@ -111,6 +136,8 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
+[Contact me](https://www.dantas15.com/contact)
+
 Project Link: [https://github.com/dantas15/todo-graphql-koa-relay](https://github.com/dantas15/todo-graphql-koa-relay)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -130,3 +157,4 @@ Project Link: [https://github.com/dantas15/todo-graphql-koa-relay](https://githu
 [mongodb-url]: https://mongodb.com
 [koa]: https://img.shields.io/badge/Koa-F9F9F9?style=for-the-badge&logo=koa&logoColor=33333D
 [koa-url]: https://koajs.com
+[models-url]: .github/models.png
