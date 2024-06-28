@@ -15,6 +15,7 @@ const ENV = process.env;
 
 const config = {
   PORT: ENV.PORT ?? 3000,
+  MONGO_URI: ENV.MONGO_URI ?? '',
 };
 
 export { config };
