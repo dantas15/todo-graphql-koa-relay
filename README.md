@@ -103,7 +103,13 @@ git clone https://github.com/dantas15/todo-graphql-koa-relay.git
    pnpm install
    ```
 
-2. Run the Project
+2. Run containers
+
+   ```sh
+   pnpm compose:up
+   ```
+
+3. Run the Project
 
    ```sh
    pnpm dev
