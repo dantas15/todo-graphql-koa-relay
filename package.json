@@ -5,7 +5,7 @@
     "config:local": "turbo run config:local",
     "dev": "turbo run dev",
     "compose:up": "docker-compose -f docker-compose.yaml up -d",
-    "compose:down": "docker-compose -f docker-compose down"
+    "compose:down": "docker-compose -f docker-compose.yaml down"
   },
   "devDependencies": {
     "turbo": "^2.0.4"
